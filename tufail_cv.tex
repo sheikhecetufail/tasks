@@ -1,0 +1,186 @@
+\documentclass[a4paper,11pt]{article}
+
+%A Few Useful Packages
+\usepackage[margin=0.75in,top=0.35in,right=0.75in,bottom=0.15in,includefoot]{geometry}
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+%\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{hyperref}
+%Setup hyperref package, and colours for links
+%\usepackage{hyperref}
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+[ItalicFont = Fontin-Italic.otf]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+%\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+\usepackage{lipsum}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+%\usepackage[compact]{titlesec}
+%\usepackage{color}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\small
+%\hfill \includegraphics[width=0.2\textwidth]{photo2gate.jpg}\\[1.5cm]
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\Huge \textsc{ Mohammad Tufail Sheikh} 
+\hfill \includegraphics[width=0.2\textwidth]{TUFAIL_PHOTO.jpg} }
+\vspace{3mm}
+\begin{center} {\LARGE{ \textsc{ Curriculum Vitae}}}\\\vspace{3mm}
+%{\LARGE{ \textsc{ }}
+ \end{center}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{\textcolor{Maroon}{Personal Data}}
+\vspace{3mm}
+\begin{tabular}{rl}
+    %\textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
+    \textsc{Address:}   &\normalsize{Gulbahar Colony, Hyderpora,}\\\vspace{2mm}& \normalsize{Srinagar, JK, India - 190014} \\\vspace{1mm}
+    \textsc{Phone:}     & \+91-9018548868\\ \vspace{1mm}
+    \textsc{email:}     &  \href{mailto:sheikhecetufail@gmail.com}{\emph{\Large sheikhecetufail@gmail.com}} \\\vspace{1mm}
+   % \textsc{DOB:} & 14, March, 1993
+\end{tabular}
+%Section: Work Experience at the top
+\section{\textcolor{Maroon}{Work Experience}}
+\vspace{2mm}
+\begin{tabular}{r|p{13cm}}
+ \textsc{2018 -- 2021} & \emph{{\Large{\textsc{Rhic Innovation LLP}}}} \\& \emph{( Worked as Project Instructor ) }\\ & \small{The primary goal of the company is Research and Development  in Internet of things(IOT), Machine Learning, Artificial Intelligence and Deep Learning. I have worked here as a project instructor to various students and guided them in various AI based simple projects .}
+ \vspace{3mm}\\
+ \textsc{2017} & \emph{{\Large{\textsc{Robotics Research Centre}}}} \emph{(IIIT-Hyderabad)} \\& \emph{( Worked as a Research Trainee Under Prof. Madhava Krishna ) }\\ & \small{The IIIT Robotics Lab is a part of International Institute of Information Technology Hyderabad,India. The lab aims to works on research problems and innovative projects. I worked here as an intern on the problem of Image Based Visual Servoing. IBVS is the technique to control the motion of the robot by using the computer vision data in the servo loop. This was done on simulator called as Gazebo..}
+ \vspace{3mm}\\
+%\multicolumn{2}{c}{ \\
+ \textsc{2016} & \emph{{\Large{\textsc{TCIL - IT, Chandigarh}}}}\\ & { ( \emph{Internship Program} )\\ & \small{ Telecommunications Consultants India Limited is a government of India owned engineering and consultancy company under the administrative control of the Department of Telecommunications, Ministry of India. I worked here as a trainee. In this training, i enriched myself with the basic knowledge of Networking and telecommunications.}}
+ %\\\multicolumn{2}{c}{} \\
+%\textsc{Summer 2007} & Summer Intern at \textsc{Lehman Brothers}, \emph{Capital Markets}\\&\footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}}
+\end{tabular}
+
+%Section: Education
+\section{\textcolor{Maroon}{Education}}
+\vspace{2mm}
+\begin{tabular}{r|p{13cm}}	
+\textsc{2021 -- Present} & \emph{{\Large{\textsc{Masters Of Technology}}}}\\ & {  \large (\emph{Communication and Information Technology})}\\
+&\emph{National Institute of Technology, Srinagar} \\ 
+\vspace{3mm}
+%\end{tabular}
+\\
+\textsc{2014 -- 2018} & \emph{{\Large{\textsc{Bachelors Of Technology}}}}\\ & {  \large (\emph{Electronics and Communication Engg.})}\\
+&\emph{National Institute of Technology, Srinagar} \\ & CGPA - 8.0\vspace{3mm}
+%\end{tabular}
+\\
+%\begin{tabular}{r|p{11cm}}	
+
+ \textsc{2011} & {{\Large{\textsc{Higher Secondary Education}}}}\\ 
+& \emph{JKBOSE, Bemina, Srinagar}\\ & \emph{Percentage} - 91.2
+\end{tabular}
+\newpage
+%\addtolength{\voffset}{1.3cm}
+%Section: Projects
+\section{\textcolor{Maroon}{Projects}}
+\vspace{3mm}
+\begin{tabular}{r|p{13cm}}
+\textsc{Project Name} & {\normalsize{\textsc{Image Based Visual Servoing based Object Follower}}}
+%\end{tabular}
+\\
+\textsc{Project Name} & {\normalsize{\textsc{Implementation of Different Machine learning Algorithms on different datasets.}}}
+\\
+%\begin{tabular}{r|p{11.5cm}}
+\textsc{Project Name} &{\normalsize{\textsc{Image Classification using CNN,Deep Learning }}}\\
+\textsc{Project Name} &{\normalsize{\textsc{Implemented different NLP Algorithms like RNN, GRU, LSTM }}}\\
+\end{tabular}
+%Section: Scholarships and additional info
+\section{\textcolor{Maroon}{Courses \& Certificates}}
+\vspace{3mm}
+\begin{tabular}{r|p{16cm}}
+
+\textsc{2021} & {\normalsize{ \textsc{DeepLearning.AI TensorFlow Developer}}}\\ & \emph{{\normalsize{DeepLearning.AI on Coursera}}} \\ & {\small{ From this Specialization, I have
+learned how to build and train neural networks using TensorFlow,
+how to improve network performance using convolutions as we train
+it to identify real-world images, how to teach machines to understand,
+analyze, and respond to human speech with natural language
+processing systems, and more, as these and other TensorFlow
+concepts are going to be at the forefront of the coming
+transformation to an AI-powered future.
+ }}\vspace{3mm}\\
+ 
+ \textsc{2018} & {\normalsize{ \textsc{Machine Learning}}}\\ & \emph{{\small{Stanford University on coursera}}}\vspace{3mm}\\
+
+\textsc{2018 } & \emph{{\normalsize{\textsc{Python for Everybody Specialization}}}}\\ & {  \emph{University of Michigan on coursera} }\\ & \small{ This Specialization builds on the success of the Python for
+Everybody course and will introduce fundamental programming
+concepts including data structures, networked application
+program interfaces, and databases, using the Python
+programming language.}\vspace{3mm}\\
+%\textsc{2018} & {\normalsize{ \textsc{Machine Learning}}}\\ & \emph{{\small{Stanford Unversity (via coursera)}}}\vspace{3mm}\\
+\textsc{2018} & {\normalsize{ \textsc{Introduction to Data Science in Python}}}\\ & \emph{{\small{University of Michigan on coursera.}}}\vspace{3mm}\\
+
+  \textsc{2021} & {\normalsize{ \textsc{Graduate Aptitude Test
+Engineering}} {( GATE )}}\\ & \emph{Ministry of Human Resources
+Development (MHRD), Government of India.}
+\vspace{3mm}\\
+%\end{tabular}
+
+\end{tabular}
+%Section: Languages
+\section{\textcolor{Maroon}{Skills}}
+\vspace{3mm}
+\begin{tabular}{r|p{16cm}}
+\textsc{Programming Languages} & {\normalsize{C, Python}}\vspace{3mm}\\ 
+\textsc{Librares} & {\normalsize{Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn, Tensorflow, Keras  }}
+\vspace{3mm}\\
+\textsc{Communication} & {\normalsize{English, Urdu, Kashmiri }}
+\vspace{3mm}\\
+\textsc{Others} & {\normalsize{DataScience, Arduino, LaTex }}
+\\
+
+\end{tabular}
+
+
+\end{document}
